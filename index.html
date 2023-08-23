@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>To Do List</h1>
+
+    <div class="container">
+        <ol id="lists"></ol>
+
+        <form>
+            <input type="text" placeholder="New To Do Item" id="item"> <br>
+            <input type="button" value="Add" onclick="addItem()">
+        </form>
+
+    </div>
+
+    <script>
+        const addItem = () => {
+            let item = document.getElementById("item");
+            let listItem = document.getElementById("lists");
+
+            if (item != "") {
+                let makeItemList = document.createElement("li");
+                makeItemList.appendChild(document.createTextNode(item.value));
+                listItem.appendChild(makeItemList);
+                item.value = "";
+
+                // makeItemList.onClick = () => this.parentNode.removeChild(this);
+            } else {
+                console.log('Please add a list item');
+            }
+        }
+    </script>
+</body>
+</html>

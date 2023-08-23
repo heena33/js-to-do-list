@@ -1,0 +1,42 @@
+body {
+    padding: 0;
+    margin: 0px;
+    background-color: darkgray;
+}
+
+.container {
+    margin: auto;
+    margin-top: 100px;
+    background-color: whitesmoke;
+    width: 400px;
+    height: auto;
+    padding: 20px 40px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(27, 117, 120);
+}
+
+input[type="text"] {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    padding: 15px 25px 15px 0px;
+    outline: none;
+}
+
+input[type="button"] {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    margin-top: 10px;
+}
+
+#lists {
+    font-size: 20px;
+}
